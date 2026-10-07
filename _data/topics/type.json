@@ -1,0 +1,70 @@
+{
+  "id": "type",
+  "title": "排版與字體",
+  "draft": false,
+  "order": 2,
+  "category": "設計基礎",
+  "level": "入門",
+  "updated": "2026-09-02",
+  "cover": "",
+  "color": "blue",
+  "tags": [
+    "字體",
+    "排版"
+  ],
+  "description": "中文排版有很多和英文不一樣的眉角。這個主題從選字開始，講到行高、字距和版面網格。",
+  "goals": [
+    "分辨黑體、明體與圓體的使用時機",
+    "設定讀起來舒服的行高與行長",
+    "用網格安排頁面"
+  ],
+  "audience": [
+    "覺得畫面「怪怪的」但說不出原因的人",
+    "需要做簡報或社群圖的人"
+  ],
+  "chapters": [
+    {
+      "title": "中文字體怎麼選",
+      "youtube": "",
+      "duration": "11:20",
+      "points": [
+        "黑體、明體、圓體的個性",
+        "免費可商用的字體來源"
+      ],
+      "timestamps": [],
+      "handout": ""
+    },
+    {
+      "title": "行高、字距與行長",
+      "youtube": "",
+      "duration": "13:45",
+      "points": [
+        "中文內文行高 1.6 到 1.8",
+        "一行大約 25 到 35 個字"
+      ],
+      "timestamps": [],
+      "handout": ""
+    },
+    {
+      "title": "層級與對比",
+      "youtube": "",
+      "duration": "09:58",
+      "points": [
+        "用大小、粗細、顏色拉出層級"
+      ],
+      "timestamps": [],
+      "handout": ""
+    },
+    {
+      "title": "版面網格",
+      "youtube": "",
+      "duration": "16:10",
+      "points": [
+        "欄、溝、邊界",
+        "8 點網格系統"
+      ],
+      "timestamps": [],
+      "handout": ""
+    }
+  ]
+}

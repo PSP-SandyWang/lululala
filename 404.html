@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>找不到頁面</title>
+<script>
+// 找不到的網址一律導回首頁的 404 畫面（同時支援 帳號.github.io/專案名/ 這種網址）
+var p=location.pathname.split('/').filter(Boolean);
+var base=(location.hostname.slice(-10)==='github.io'&&p.length)?'/'+p[0]+'/':'/';
+location.replace(base+'#404');
+</script>
+<p>找不到這個頁面，<a href="/">回首頁</a>。</p>

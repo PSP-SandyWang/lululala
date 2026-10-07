@@ -1,0 +1,115 @@
+{
+  "id": "figma",
+  "title": "Figma 從零開始",
+  "draft": false,
+  "order": 1,
+  "category": "工具",
+  "level": "入門",
+  "updated": "2026-09-20",
+  "cover": "",
+  "color": "green",
+  "tags": [
+    "Figma",
+    "介面設計"
+  ],
+  "description": "從打開第一個檔案開始，一路做到能交付給工程師的畫面。適合完全沒用過 Figma 的人。",
+  "goals": [
+    "看懂 Figma 的介面與檔案結構",
+    "會用 Auto layout 排出可以伸縮的版面",
+    "做出自己的第一組元件",
+    "知道怎麼交付給工程師"
+  ],
+  "audience": [
+    "想轉職 UI 設計的人",
+    "只用過 Illustrator 或 Photoshop 的人",
+    "想自己畫原型的 PM 或工程師"
+  ],
+  "chapters": [
+    {
+      "title": "認識介面與檔案結構",
+      "youtube": "",
+      "duration": "08:12",
+      "points": [
+        "左側圖層、中間畫布、右側屬性面板",
+        "頁面 Page 和畫框 Frame 的差別",
+        "建議的檔案命名方式"
+      ],
+      "timestamps": [
+        {
+          "time": "00:00",
+          "label": "開場"
+        },
+        {
+          "time": "01:30",
+          "label": "介面導覽"
+        },
+        {
+          "time": "05:10",
+          "label": "檔案命名"
+        }
+      ],
+      "handout": ""
+    },
+    {
+      "title": "Frame 與基本圖形",
+      "youtube": "",
+      "duration": "12:40",
+      "points": [
+        "Frame 和 Group 什麼時候用哪個",
+        "約束 Constraints 的四種設定",
+        "用快捷鍵加快作業"
+      ],
+      "timestamps": [],
+      "handout": ""
+    },
+    {
+      "title": "Auto layout 一次搞懂",
+      "youtube": "",
+      "duration": "18:05",
+      "points": [
+        "間距、內距與對齊",
+        "Hug 和 Fill 的差別",
+        "巢狀 Auto layout 的思考方式"
+      ],
+      "timestamps": [
+        {
+          "time": "00:00",
+          "label": "開場"
+        },
+        {
+          "time": "05:20",
+          "label": "Hug 和 Fill"
+        },
+        {
+          "time": "11:40",
+          "label": "巢狀排版"
+        }
+      ],
+      "handout": ""
+    },
+    {
+      "title": "元件與變體",
+      "youtube": "",
+      "duration": "15:30",
+      "points": [
+        "建立元件與實例",
+        "用 Variants 管理按鈕狀態",
+        "元件屬性 Component properties"
+      ],
+      "timestamps": [],
+      "handout": ""
+    },
+    {
+      "title": "交付給工程師",
+      "youtube": "",
+      "duration": "10:48",
+      "points": [
+        "Dev mode 能看到什麼",
+        "標註與切圖",
+        "交付前的檢查清單"
+      ],
+      "timestamps": [],
+      "handout": ""
+    }
+  ]
+}

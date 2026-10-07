@@ -1,0 +1,90 @@
+{
+  "name": "設計小課堂",
+  "hero_title": "一次一小段，把設計的基本功練起來",
+  "hero_lead": "免費的設計線上課程，不用註冊。每個主題拆成幾段十分鐘左右的影片，附講義和筆記。",
+  "coming_soon": "下一個主題準備中",
+  "footer_note": "一個人慢慢做的線上課程，影片都放在 YouTube。",
+  "copyright": "影片與講義未經同意請勿轉載",
+  "news": [
+    {
+      "date": "2026-09-20",
+      "text": "「Figma 從零開始」新增第 5 章"
+    },
+    {
+      "date": "2026-09-02",
+      "text": "「排版與字體」講義更新"
+    }
+  ],
+  "about": {
+    "name": "站長",
+    "title": "嗨，我是這個網站的站長",
+    "short": "在媒體業做了八年 UI/UX 設計，把工作上常被問的事情整理成課程。",
+    "photo": "",
+    "bio": "（範例文字，請到後台修改）在媒體業做了八年 UI/UX 設計，做過影音平台、App 和後台系統。工作上常被新人問到一樣的問題，所以乾脆錄成影片放上來。",
+    "experience": [
+      {
+        "period": "2022–",
+        "role": "影音平台 資深 UI/UX 設計師"
+      },
+      {
+        "period": "2018–2022",
+        "role": "數位媒體 視覺設計師"
+      }
+    ],
+    "email": "hello@example.com"
+  },
+  "social": [
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "label": "Threads",
+      "url": "https://www.threads.net/"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/"
+    }
+  ],
+  "ask": {
+    "links": [
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "label": "Threads",
+        "url": "https://www.threads.net/"
+      },
+      {
+        "label": "提問表單",
+        "url": ""
+      },
+      {
+        "label": "棉花糖",
+        "url": ""
+      }
+    ]
+  },
+  "notes_submit_url": "",
+  "support": {
+    "title": "支持設計小課堂",
+    "short": "課程會一直免費，抖內可以讓我繼續做下去。",
+    "intro": "這裡的課程都會一直免費。如果你覺得有幫助，可以請我喝杯咖啡，讓我有動力繼續錄下一個主題。",
+    "button_label": "前往抖內",
+    "url": "",
+    "uses": [
+      "麥克風與錄音設備",
+      "字體與素材授權",
+      "網站網域費用"
+    ],
+    "tiers": [],
+    "thanks": [
+      "阿哲",
+      "Momo",
+      "小米"
+    ]
+  },
+  "privacy": "<p>本站不提供會員註冊，不收集你的姓名或聯絡方式。觀看進度只存在你自己的瀏覽器。</p><p>影片由 YouTube 提供，YouTube 可能會使用 Cookie。提問表單、棉花糖與抖內頁面由第三方提供，請參考各平台的隱私權政策。</p>"
+}

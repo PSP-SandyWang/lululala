@@ -1,0 +1,6 @@
+# GitHub Pages 會用 Jekyll 把 _data 資料夾裡的內容組成 data.json
+title: 設計小課堂
+exclude:
+  - README.md
+  - preview.py
+  - data.local.json

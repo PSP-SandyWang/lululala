@@ -1,0 +1,5 @@
+---
+layout: null
+permalink: /data.json
+---
+{"site":{{ site.data.site | jsonify }},"topics":{{ site.data.topics | jsonify }},"qa":{{ site.data.qa | jsonify }},"notes":{{ site.data.notes | jsonify }}}

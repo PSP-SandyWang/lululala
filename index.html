@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>設計小課堂</title>
+<meta name="description" content="免費的設計線上課程，不用註冊。">
+<meta property="og:title" content="設計小課堂">
+<meta property="og:description" content="免費的設計線上課程，不用註冊。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="logo" href="#home"><i id="logoMark">設</i><span id="siteName">設計小課堂</span></a>
+    <nav class="nav-links" aria-label="主選單">
+      <a href="#topics" data-nav="topics">所有主題</a>
+      <a href="#qa" data-nav="qa">常見問題</a>
+      <a href="#notes" data-nav="notes">筆記分享</a>
+      <a href="#about" data-nav="about">關於我</a>
+    </nav>
+    <a class="btn chalk" href="#support">支持我</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mnav">選單</button>
+  </div>
+  <div class="wrap mobile-nav" id="mnav">
+    <a href="#topics">所有主題</a><a href="#qa">常見問題</a><a href="#notes">筆記分享</a><a href="#about">關於我</a><a href="#support">支持我</a>
+  </div>
+</header>
+
+<main class="wrap" id="app"><p class="loading">載入中…</p></main>
+
+<footer><div class="wrap" id="foot"></div></footer>
+<div class="toast" id="toast" hidden></div>
+
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+  "id": "color",
+  "title": "色彩的日常練習",
+  "draft": false,
+  "order": 3,
+  "category": "設計基礎",
+  "level": "進階",
+  "updated": "2026-08-15",
+  "cover": "",
+  "color": "red",
+  "tags": [
+    "色彩"
+  ],
+  "description": "不背色彩理論，改用每天的小練習累積配色的手感，最後整理出一套自己的色票。",
+  "goals": [
+    "用 HSB 理解顏色",
+    "做出有主次的配色",
+    "建立淺色與深色兩套色票"
+  ],
+  "audience": [
+    "已經會基本工具、想讓作品更好看的人"
+  ],
+  "chapters": [
+    {
+      "title": "用 HSB 看顏色",
+      "youtube": "",
+      "duration": "10:05",
+      "points": [
+        "色相、飽和度、明度"
+      ],
+      "timestamps": [],
+      "handout": ""
+    },
+    {
+      "title": "主色、輔色與強調色",
+      "youtube": "",
+      "duration": "14:22",
+      "points": [
+        "60-30-10 比例"
+      ],
+      "timestamps": [],
+      "handout": ""
+    },
+    {
+      "title": "對比與無障礙",
+      "youtube": "",
+      "duration": "12:37",
+      "points": [
+        "WCAG 對比度 4.5:1"
+      ],
+      "timestamps": [],
+      "handout": ""
+    },
+    {
+      "title": "做一套深色模式",
+      "youtube": "",
+      "duration": "17:50",
+      "points": [
+        "深色模式不是顏色反轉"
+      ],
+      "timestamps": [],
+      "handout": ""
+    }
+  ]
+}

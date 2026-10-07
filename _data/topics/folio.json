@@ -1,0 +1,27 @@
+{
+  "id": "folio",
+  "title": "作品集怎麼做",
+  "draft": true,
+  "order": 4,
+  "category": "職涯",
+  "level": "入門",
+  "updated": "2026-07-28",
+  "cover": "",
+  "color": "purple",
+  "tags": [
+    "作品集"
+  ],
+  "description": "（草稿範例：這個主題勾了「草稿」，網站上不會出現）",
+  "goals": [],
+  "audience": [],
+  "chapters": [
+    {
+      "title": "挑選要放的案子",
+      "youtube": "",
+      "duration": "09:40",
+      "points": [],
+      "timestamps": [],
+      "handout": ""
+    }
+  ]
+}

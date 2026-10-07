@@ -1,0 +1,50 @@
+[
+  {
+    "question": "要從哪個主題開始看？",
+    "answer": "完全沒基礎的話，建議先看「Figma 從零開始」，再看「排版與字體」。",
+    "category": "觀看課程",
+    "pinned": true,
+    "topic": "",
+    "chapter": null
+  },
+  {
+    "question": "課程要付費嗎？需要註冊嗎？",
+    "answer": "都不用。所有影片都免費，也不用註冊帳號。",
+    "category": "觀看課程",
+    "pinned": true,
+    "topic": "",
+    "chapter": null
+  },
+  {
+    "question": "影片和講義可以轉載嗎？",
+    "answer": "個人學習可以自由使用。轉載、改作或用在付費課程前，請先私訊我。",
+    "category": "影片與講義",
+    "pinned": true,
+    "topic": "",
+    "chapter": null
+  },
+  {
+    "question": "為什麼我的觀看進度不見了？",
+    "answer": "進度是存在你的瀏覽器裡，換電腦、換瀏覽器或清除瀏覽紀錄後就會不見。",
+    "category": "影片與講義",
+    "pinned": false,
+    "topic": "",
+    "chapter": null
+  },
+  {
+    "question": "Auto layout 的 Hug 和 Fill 差在哪？",
+    "answer": "Hug 是框框跟著內容縮放，Fill 是撐滿父層剩下的空間。",
+    "category": "課程內容",
+    "pinned": false,
+    "topic": "figma",
+    "chapter": 3
+  },
+  {
+    "question": "中文內文的行高要設多少？",
+    "answer": "一般建議 1.6 到 1.8 倍。",
+    "category": "課程內容",
+    "pinned": false,
+    "topic": "type",
+    "chapter": 2
+  }
+]

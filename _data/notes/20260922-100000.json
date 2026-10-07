@@ -1,0 +1,11 @@
+{
+  "title": "Auto layout 我自己的整理",
+  "topic": "figma",
+  "chapter": 3,
+  "author": "站長",
+  "date": "2026-09-22",
+  "draft": false,
+  "summary": "把 Hug、Fill、Fixed 三種設定畫成一張對照表，附上常犯的錯誤。",
+  "body": "<p>（範例筆記內文，請到後台修改或刪除）</p><ul><li>Hug：跟著內容縮放</li><li>Fill：撐滿剩下的空間</li><li>Fixed：固定尺寸</li></ul>",
+  "pdf": ""
+}

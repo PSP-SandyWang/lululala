@@ -1,0 +1,314 @@
+# Pages CMS 後台設定：https://app.pagescms.org
+# 這份檔案決定後台有哪些選單和欄位。改完存檔，後台重新整理就會更新。
+
+media:
+  input: assets/uploads
+  output: assets/uploads
+  rename: random
+
+content:
+  # ───────────── 課程主題（一個主題一個檔案）─────────────
+  - name: topics
+    label: 課程主題
+    type: collection
+    path: _data/topics
+    format: json
+    filename:
+      template: "{id}.json"
+      field: false
+    view:
+      fields: [title, category, order, draft]
+      primary: title
+      sort: [order, title]
+      default:
+        sort: order
+        order: asc
+    fields:
+      - name: id
+        label: 網址代號
+        type: string
+        required: true
+        description: 會出現在網址裡，只能用小寫英文和數字，例如 figma。建立後不要再改，不然舊連結和觀眾的觀看進度會失效。
+        pattern:
+          regex: "^[a-z0-9]+$"
+          message: 只能用小寫英文字母和數字，例如 figma
+      - name: title
+        label: 主題名稱
+        type: string
+        required: true
+      - name: draft
+        label: 草稿（勾選後網站上不會顯示）
+        type: boolean
+        default: true
+      - name: order
+        label: 排序
+        type: number
+        description: 數字小的排前面
+      - name: category
+        label: 分類
+        type: string
+        description: 例如：工具、設計基礎、職涯。同樣的分類要打一樣的字
+      - name: level
+        label: 難度
+        type: select
+        options:
+          values: [入門, 進階, 不分程度]
+      - name: updated
+        label: 更新日期
+        type: date
+      - name: cover
+        label: 封面配圖
+        type: image
+        description: 建議 1600 × 900（16:9）。沒放的話會用下面選的顏色自動產生圖案
+      - name: color
+        label: 主題顏色
+        type: select
+        options:
+          values:
+            - { name: green, label: 黑板綠 }
+            - { name: blue, label: 墨水藍 }
+            - { name: red, label: 磚紅 }
+            - { name: purple, label: 紫 }
+            - { name: gray, label: 灰 }
+      - name: tags
+        label: 標籤
+        type: string
+        list: true
+      - name: description
+        label: 主題簡介
+        type: text
+      - name: goals
+        label: 看完你會
+        type: string
+        list: true
+      - name: audience
+        label: 適合誰
+        type: string
+        list: true
+      - name: chapters
+        label: 章節（可拖曳排序）
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: 章節名稱
+            type: string
+            required: true
+          - name: youtube
+            label: YouTube 影片網址
+            type: string
+            description: 直接貼 YouTube 網址。影片設成「公開」或「不公開」都可以，設成「私人」會無法播放
+          - name: duration
+            label: 影片長度
+            type: string
+            description: 例如 08:12
+            pattern:
+              regex: "^(\\d{1,2}:)?\\d{1,2}:\\d{2}$"
+              message: 請用 分:秒 的格式，例如 08:12
+          - name: points
+            label: 本章重點
+            type: string
+            list: true
+          - name: timestamps
+            label: 時間軸
+            type: object
+            list: true
+            fields:
+              - name: time
+                label: 時間
+                type: string
+                description: 例如 05:20
+              - name: label
+                label: 說明
+                type: string
+          - name: handout
+            label: 講義 PDF
+            type: file
+
+  # ───────────── 常見問題（全部在同一個檔案）─────────────
+  - name: qa
+    label: 常見問題
+    type: file
+    path: _data/qa.json
+    format: json
+    list: true
+    fields:
+      - name: question
+        label: 問題
+        type: string
+        required: true
+      - name: answer
+        label: 回答
+        type: text
+        required: true
+      - name: category
+        label: 分類
+        type: string
+        description: 例如：觀看課程、影片與講義、課程內容
+      - name: pinned
+        label: 置頂（放在「先看這幾題」）
+        type: boolean
+      - name: topic
+        label: 相關主題（選填）
+        type: reference
+        options:
+          collection: topics
+          search: title
+          value: "{id}"
+          label: "{title}"
+      - name: chapter
+        label: 相關章節（選填，填第幾章）
+        type: number
+
+  # ───────────── 筆記分享（一篇筆記一個檔案）─────────────
+  - name: notes
+    label: 筆記分享
+    type: collection
+    path: _data/notes
+    format: json
+    filename:
+      template: "{year}{month}{day}-{hour}{minute}{second}.json"
+      field: false
+    view:
+      fields: [title, author, date]
+      primary: title
+      sort: [date, title]
+      default:
+        sort: date
+        order: desc
+    fields:
+      - name: title
+        label: 筆記標題
+        type: string
+        required: true
+      - name: draft
+        label: 草稿（勾選後網站上不會顯示）
+        type: boolean
+      - name: topic
+        label: 所屬主題
+        type: reference
+        options:
+          collection: topics
+          search: title
+          value: "{id}"
+          label: "{title}"
+      - name: chapter
+        label: 對應第幾章
+        type: number
+      - name: author
+        label: 作者
+        type: string
+        default: 站長
+        description: 觀眾投稿的話寫「觀眾投稿・名字」
+      - name: date
+        label: 日期
+        type: date
+      - name: summary
+        label: 一句話摘要
+        type: text
+      - name: body
+        label: 筆記內文
+        type: rich-text
+        options:
+          format: html
+      - name: pdf
+        label: 筆記 PDF（選填）
+        type: file
+
+  # ───────────── 網站設定（關於我、抖內、社群連結…）─────────────
+  - name: site
+    label: 網站設定
+    type: file
+    path: _data/site.json
+    format: json
+    fields:
+      - name: name
+        label: 網站名稱
+        type: string
+      - name: hero_title
+        label: 首頁大標
+        type: string
+      - name: hero_lead
+        label: 首頁說明文字
+        type: text
+      - name: coming_soon
+        label: 首頁黑板最後一行
+        type: string
+        description: 例如「下一個主題準備中」，留空就不顯示
+      - name: news
+        label: 最新消息
+        type: object
+        list: true
+        fields:
+          - { name: date, label: 日期, type: date }
+          - { name: text, label: 內容, type: string }
+      - name: about
+        label: 關於我
+        type: object
+        fields:
+          - { name: name, label: 名字, type: string }
+          - { name: title, label: 頁面大標, type: string }
+          - { name: short, label: 首頁簡短介紹, type: text }
+          - { name: photo, label: 大頭照, type: image }
+          - { name: bio, label: 自我介紹, type: text }
+          - name: experience
+            label: 經歷
+            type: object
+            list: true
+            fields:
+              - { name: period, label: 期間, type: string, description: 例如 2022– }
+              - { name: role, label: 職稱, type: string }
+          - { name: email, label: 合作聯絡信箱, type: string }
+      - name: social
+        label: 社群連結（關於我頁）
+        type: object
+        list: true
+        fields:
+          - { name: label, label: 名稱, type: string }
+          - { name: url, label: 網址, type: string }
+      - name: ask
+        label: 提問管道
+        type: object
+        fields:
+          - name: links
+            label: 提問連結（IG、Threads、表單、棉花糖）
+            type: object
+            list: true
+            fields:
+              - { name: label, label: 名稱, type: string }
+              - { name: url, label: 網址, type: string, description: 留空就不顯示這個按鈕 }
+      - name: notes_submit_url
+        label: 筆記投稿表單網址
+        type: string
+        description: 留空就不顯示投稿區塊
+      - name: support
+        label: 抖內
+        type: object
+        fields:
+          - { name: title, label: 頁面大標, type: string }
+          - { name: short, label: 短句（章節結尾、首頁用）, type: string }
+          - { name: intro, label: 支持我頁的說明, type: text }
+          - { name: button_label, label: 按鈕文字, type: string }
+          - { name: url, label: 抖內網址, type: string, description: 綠界、歐付寶、Portaly 等抖內頁面的網址。留空的話全站的抖內提示都會隱藏 }
+          - { name: uses, label: 抖內會用在哪裡, type: string, list: true }
+          - name: tiers
+            label: 贊助方案（之後想分級再填）
+            type: object
+            list: true
+            fields:
+              - { name: name, label: 方案名稱, type: string }
+              - { name: price, label: 金額, type: string }
+              - { name: description, label: 說明, type: text }
+              - { name: url, label: 這個方案的抖內網址, type: string }
+          - { name: thanks, label: 感謝名單, type: string, list: true }
+      - name: footer_note
+        label: 頁尾一句話
+        type: string
+      - name: copyright
+        label: 版權聲明
+        type: string
+      - name: privacy
+        label: 隱私權聲明
+        type: rich-text
+        options:
+          format: html
